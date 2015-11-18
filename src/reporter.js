@@ -1,6 +1,6 @@
 var Squeeze = require('good-squeeze').Squeeze;
 
-function Reporter (events, config) {
+module.export = function Reporter (events, config) {
 
     if (!(this instanceof Reporter)) {
         return new Reporter(events, config);
@@ -21,5 +21,3 @@ Reporter.prototype.init = function (readstream, emitter, callback) {
 Reporter.attributes = {
     name: 'reporter'
 }
-
-module.export = Reporter
