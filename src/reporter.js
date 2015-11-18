@@ -13,7 +13,6 @@ Reporter.prototype.init = function (readstream, emitter, callback) {
 
     readstream.pipe(this.squeeze).pipe(process.stdout);
     emitter.on('stop', function () {
-
         console.log('some clean up logic.');
     });
     callback();

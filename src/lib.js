@@ -15,7 +15,7 @@ var GoodLogstash = function (events, options) {
 
 module.exports = GoodLogstash;
 
-Hoek.inherits(GoodLogstash, GoodReporter);
+Hoek.inherits(GoodLogstash, new GoodReporter());
 
 var public = GoodLogstash.prototype;
 
