@@ -6,7 +6,7 @@ var Hoek = require('hoek');
 var Stringify = require('json-stringify-safe');
 var Squeeze = require('good-squeeze').Squeeze;
 var lumberjack = require('lumberjack-protocol');
-var GoodReporter = require('good-reporter');
+var GoodReporter = require('./reporter');
 
 var GoodLogstash = function (events, options) {
     this.options = options;
